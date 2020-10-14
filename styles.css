@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 20px;
+  background: linear-gradient(to top, #505050, #505050);
+}
+ul {
+  list-style-type: circle; /* styles of unordered lists*/
+  text-align: left;
+  color: #FFFFFF;
+}
+a {
+  text-decoration: none;  /* No underlined links*/
+}
+p {
+  padding: 5px;
+  text-align: left;  /* Other accepted values are right, center, or justify*/
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+img {
+  max-width:100%;
+}
+/*****************************************************************************/
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(to top, #F0F0F0, #707070);
+}
+.nav-title {
+  color: #FFFFFF;
+  margin-right: 2.5em;
+}
+.section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+.header {
+  background: linear-gradient(to right, #4448EC, #6644EC);
+  color: #FFFFFF;
+  height: 150px;
+}
+.body{
+  height: 400px;
+  margin: 0;
+}
+.feature {
+  background-color: #343A40;
+  margin: 1em;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+.footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #343A40;
+}
+/*****************************************************************************/
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .feature-1 {
+    max-width: 100%;
+  }
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .feature-1 {
+    width: 50%;
+  }
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .page {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .feature-1 {
+    width: 33%;
+  }
+  .column {
+    flex: 25%;
+    max-width: 25%
+  }
+}
